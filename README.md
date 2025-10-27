@@ -7,14 +7,14 @@
 
 This repository contains four main folders:
 
-1. [**ReSOlve Benchmark Dataset**](#resolve-benchmark-dataset)
+1. [**ReSOlve Benchmark Dataset**](#1-resolve-benchmark-dataset)
 2. [**Identifying Improvement-Related Concerns in Comments with LLMs (RQ1)**](#2-identifying-improvement-related-concerns-in-comments-with-llms-rq1)
 3. [**Improvements Comparable to Human Revisions (RQ2)**](#3-improvements-comparable-to-human-revisions-rq2) 
 4. [**User Perception of AUTOCOMBAT-Enhanced Answers in Practical Settings (RQ3)**](#4-user-perception-of-autocombat-enhanced-answers-in-practical-settings-rq3)
 
 ---
 
-## ReSOlve Benchmark Dataset
+## (1) ReSOlve Benchmark Dataset
 
 This folder contains a single file named **`ReSOlve.xlsx`**, which includes **790 instances** across **four quartiles** (based on comment counts).  
 Each instance has been **manually annotated** under two categories:
