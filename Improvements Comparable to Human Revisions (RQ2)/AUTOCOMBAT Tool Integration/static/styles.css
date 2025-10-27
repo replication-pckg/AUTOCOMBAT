@@ -1,0 +1,183 @@
+/* ================================
+   AUTOCOMBAT EXTENSION STYLES
+   ================================ */
+
+/* --- Button styles --- */
+.improve-btn {
+    margin-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.improve-btn:hover {
+    background-color: #333333;
+}
+
+/* --- Improved Answer Container --- */
+.improved-answer {
+    background-color: #f9f9f9;
+    border-left: 5px solid #0077cc;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 14px;
+    animation: fadeIn 0.4s ease-in;
+}
+
+/* --- Title for Improved Answer --- */
+.improved-answer-title {
+    color: #0077cc;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/* --- Metadata (concerns, change log, context info) --- */
+.improved-answer-meta {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.improved-answer-meta details {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+
+.improved-answer-meta summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+.improved-answer-meta ul {
+    margin: 8px 0 0 20px;
+    padding: 0;
+}
+
+.improved-answer-meta li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+/* --- Text paragraph blocks --- */
+.text-block {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* --- SO-like prose for improved answer --- */
+.improved-answer .s-prose p {
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.improved-answer .s-prose code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.95em;
+    padding: 0.1em 0.3em;
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+}
+
+/* --- Code Blocks (fenced markdown style) --- */
+.improved-answer .s-code-block {
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 12px;
+    overflow: auto;
+    margin: 12px 0 16px;
+}
+
+.improved-answer pre,
+.improved-answer code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    line-height: 1.45;
+    tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+}
+
+/* --- Old plain .code-block support (fallback) --- */
+.code-block {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.code-block code {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    line-height: 1.4;
+}
+
+/* --- Fade-in animation --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* --- Remove Stack Overflow underline shading inside code blocks --- */
+.improved-answer .s-code-block code,
+.improved-answer .s-code-block pre,
+.improved-answer .s-code-block code span {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    text-decoration: none !important;
+}
+
+/* Optional: ensure plain clean monospace background */
+.improved-answer .s-code-block {
+    background-color: #f6f8fa !important;
+}
+
+
+/* Make highlighted code look identical to Stack Overflow */
+.improved-answer pre code {
+  background: none !important;
+  color: inherit;
+}
+
+.improved-answer pre {
+  background: #f8f9f9;
+  border-radius: 6px;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+.improved-answer code.hljs {
+  display: block;
+  line-height: 1.45;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+}
